@@ -5,10 +5,113 @@
     tools:context=".EventsActivity" >
 
     <TextView
+        android:id="@+id/event_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world" />
+        android:layout_marginTop="32dp"
+        android:text="Android Tour Peru"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/event_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/event_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/not_found" />
+
+	<ScrollView
+        android:id="@+id/scroll_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/event_logo"
+        android:layout_centerHorizontal="true" >
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp" >
+
+            <TextView
+                android:id="@+id/date_title"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:text="Fecha de Evento:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/date_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="04-04-2013"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp" >
+
+            <TextView
+                android:id="@+id/time_title"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:text="Hora:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/time_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="17:00 hrs"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp" >
+
+            <TextView
+                android:id="@+id/description_title"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:text="Acerca del Evento:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+ </LinearLayout>
+  <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp" >
+            <TextView
+                android:id="@+id/description_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android tour Peru primer evento del gdgLima en el 2013,Android tour Peru primer evento del gdgLima en el 2013,Android tour Peru primer evento del gdgLima en el 2013"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+    </LinearLayout>
+
+  
+       
+    </ScrollView>
 
 </RelativeLayout>
